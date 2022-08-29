@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "slack-notification-channel",
+    name: "slack-message-channel",
     platforms: [
         .macOS(.v12)
     ],
     products: [
-        .library(name: "slack-notification-channel", targets: ["slack-notification-channel"]),
+        .library(name: "SlackMessageChannel", targets: ["SlackMessageChannel"]),
     ],
     dependencies: [
         .package(url: "https://github.com/alchemy-swift/alchemy", branch: "main"),
     ],
     targets: [
         .target(
-            name: "slack-notification-channel",
+            name: "SlackMessageChannel",
             dependencies: [
                 .product(name: "Alchemy", package: "alchemy"),
             ]),
